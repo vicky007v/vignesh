@@ -16,7 +16,7 @@ pipeline {
 
         stage('aws') {
             steps {
-                sh 'docker tag nodeapp:latest public.ecr.aws/k1o3z8e3/nodeapp:latest'
+                sh 'docker tag app:latest public.ecr.aws/k1o3z8e3/app:latest'
             }
         }
     }
