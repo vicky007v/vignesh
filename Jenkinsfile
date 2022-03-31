@@ -19,6 +19,12 @@ pipeline {
                 sh 'docker tag app:latest public.ecr.aws/k1o3z8e3/app:latest'
             }
         }
+
+        stage('aws push') {
+            steps {
+                sh 'docker push public.ecr.aws/k1o3z8e3/app:latest'
+            }
+        }
     }
-} 
-          
+}                
+   
