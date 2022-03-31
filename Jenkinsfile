@@ -19,7 +19,7 @@ pipeline {
                 sh 'docker tag app:latest public.ecr.aws/k1o3z8e3/app:latest'
             }
         }
-        stage('aws') {
+        stage('aws login') {
             steps {
                 sh 'aws ecr get-login --no-include-email --region ap-northeast-2'
             }
@@ -31,5 +31,5 @@ pipeline {
             }
         }
     }
-}              
-   
+}  
+     
