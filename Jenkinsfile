@@ -21,7 +21,8 @@ pipeline {
         }
         stage('aws login') {
             steps {
-                sh '/usr/local/bin/aws ecr get-login --no-include-email --region ap-northeast-2'
+                sh '/usr/local/bin/aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/k1o3z8e3
+'
             }
         }
 
