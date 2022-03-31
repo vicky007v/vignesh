@@ -8,16 +8,11 @@ pipeline {
             }
         }
         
-        
-             
-    
         stage('build') {
             steps {
-                sh 'docker build -t app'
+                sh 'docker build -t app .'
             }
         }
     }
-}
-        
-        
+}    
           
