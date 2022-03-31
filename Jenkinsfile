@@ -7,11 +7,13 @@ pipeline {
                 git credentialsId: 'vignesh', url: 'https://github.com/vicky007v/vignesh.git'
             }
         }
-     
+        
+        
+             
     
         stage('build') {
             steps {
-                sh 'npm install'
+                sh 'docker build -t app'
             }
         }
     }
