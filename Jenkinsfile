@@ -7,14 +7,18 @@ pipeline {
                 git credentialsId: 'vignesh', url: 'https://github.com/vicky007v/vignesh.git'
             }
         }
-     stages {
+     
+        stages {
         stage('build') {
             steps {
                 sh "npm install"
             }
         }
     }
-}        
+}
+    
+        
+        
         
         
           
