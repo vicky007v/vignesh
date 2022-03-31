@@ -21,7 +21,7 @@ pipeline {
         }
         stage('aws login') {
             steps {
-                sh 'aws ecr get-login --no-include-email --region ap-northeast-2'
+                sh '/usr/local/bin/aws ecr get-login --no-include-email --region ap-northeast-2'
             }
         }
 
@@ -32,4 +32,4 @@ pipeline {
         }
     }
 }  
-     
+      
