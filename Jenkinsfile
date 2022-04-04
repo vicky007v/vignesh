@@ -34,6 +34,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
+                
                 sh './shellscript.sh'
             }
         }
