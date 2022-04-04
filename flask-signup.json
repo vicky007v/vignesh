@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "image": "public.ecr.aws/k1o3z8e3/app:latest",
-            "name": "flask-signup",
+            "name": "newproject",
             "cpu": 10,
             "memory": 256,
             "essential": true,
