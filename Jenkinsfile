@@ -32,7 +32,11 @@ pipeline {
                 sh 'docker push public.ecr.aws/k1o3z8e3/app:latest'
             }
         }
+        stage('deploy') {
+            steps {
+                sh './shellscript.sh'
+            }
+        }
     }
-}  
-   
+}            
       
