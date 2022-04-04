@@ -34,6 +34,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
+                sh 'chmod u+x samplescript.sh'
                 sh './shellscript.sh'
             }
         }
