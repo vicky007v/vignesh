@@ -1,5 +1,5 @@
 {
-    "family": "newApp",
+    "family": "newproject",
     "containerDefinitions": [
         {
             "image": "public.ecr.aws/k1o3z8e3/app:latest",
